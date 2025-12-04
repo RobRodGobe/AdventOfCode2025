@@ -52,3 +52,7 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Local puzzle inputs (do not commit personal/problem input files)
+# This ignores the InputFiles folder and everything under it.
+/InputFiles/
