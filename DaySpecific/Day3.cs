@@ -35,7 +35,7 @@ namespace AdventOfCode2025.DaySpecific
 				totalJolts += Int32.Parse($"{a}{b}");
             }
 
-            Console.WriteLine($"Day2 Part1: {totalJolts}.");
+            Console.WriteLine($"Day3 Part1: {totalJolts}.");
 		}
 
 		public override void Part2()
