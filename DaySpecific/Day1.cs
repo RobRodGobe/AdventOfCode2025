@@ -36,7 +36,7 @@ namespace AdventOfCode2025.DaySpecific
                     count++;
 			}
 
-            Console.WriteLine($"Day1 Part1: Final position {start}, crossed 0 a total of {count} times.");
+            Console.WriteLine($"{GetType().Name} {nameof(Part1)}: Final position {start}, crossed 0 a total of {count} times.");
 		}
 
 		public override void Part2()
@@ -70,7 +70,7 @@ namespace AdventOfCode2025.DaySpecific
                 start = (start + pos + 100 % 100);
             }            
 
-            Console.WriteLine($"Day1 Part2: Final position {start}, crossed 0 a total of {count} times.");
+            Console.WriteLine($"{GetType().Name} {nameof(Part2)}: Final position {start}, crossed 0 a total of {count} times.");
 		}
 	}
 }

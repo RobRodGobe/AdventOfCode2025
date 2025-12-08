@@ -65,7 +65,7 @@ namespace AdventOfCode2025.DaySpecific
                 res = circuits[0].Count * circuits[1].Count * circuits[2].Count;
             }
 
-            Console.WriteLine($"Day8 Part1: {res}.");
+            Console.WriteLine($"{GetType().Name} {nameof(Part1)}: {res}.");
 		}
 
 		public override void Part2()
@@ -128,7 +128,7 @@ namespace AdventOfCode2025.DaySpecific
                 }
             }
 
-			Console.WriteLine($"Day8 Part2: {res}.");
+			Console.WriteLine($"{GetType().Name} {nameof(Part2)}: {res}.");
 		}
 
         private long Distance((long x, long y, long z) point1, (long x, long y, long z) point2)

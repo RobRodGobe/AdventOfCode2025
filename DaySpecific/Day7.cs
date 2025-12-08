@@ -32,7 +32,7 @@ namespace AdventOfCode2025.DaySpecific
 
 			if (startRow == -1)
 			{
-				Console.WriteLine($"Day7 Part1: {count}.");
+				Console.WriteLine($"{GetType().Name} {nameof(Part1)}: {count}.");
 				return;
 			}
 
@@ -77,7 +77,7 @@ namespace AdventOfCode2025.DaySpecific
 					break;
 			}
 
-			Console.WriteLine($"Day7 Part1: {count}.");
+			Console.WriteLine($"{GetType().Name} {nameof(Part1)}: {count}.");
 		}
 
 		public override void Part2()
@@ -103,7 +103,7 @@ namespace AdventOfCode2025.DaySpecific
 
 			if (startRow == -1)
 			{
-				Console.WriteLine($"Day7 Part2: 0");
+				Console.WriteLine($"{GetType().Name} {nameof(Part2)}: 0");
 				return;
 			}
 
@@ -139,7 +139,7 @@ namespace AdventOfCode2025.DaySpecific
 
 			long total = CountPaths(startRow + 1, startCol);
 
-			Console.WriteLine($"Day7 Part2: {total}.");
+			Console.WriteLine($"{GetType().Name} {nameof(Part2)}: {total}.");
 		}
 	}
 }

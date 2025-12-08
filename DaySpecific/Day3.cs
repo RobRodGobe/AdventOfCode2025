@@ -35,7 +35,7 @@ namespace AdventOfCode2025.DaySpecific
 				totalJolts += Int32.Parse($"{a}{b}");
             }
 
-            Console.WriteLine($"Day3 Part1: {totalJolts}.");
+            Console.WriteLine($"{GetType().Name} {nameof(Part1)}: {totalJolts}.");
 		}
 
 		public override void Part2()
@@ -55,7 +55,7 @@ namespace AdventOfCode2025.DaySpecific
 				}
 			}
 
-			Console.WriteLine($"Day3 Part2: {totalJolts}.");
+			Console.WriteLine($"{GetType().Name} {nameof(Part2)}: {totalJolts}.");
 		}
 		
 		private string GetLargest12Digits(string s)

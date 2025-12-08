@@ -73,7 +73,7 @@ namespace AdventOfCode2025.DaySpecific
                 r += res;
             }
 
-            Console.WriteLine($"Day6 Part1: {r}.");
+            Console.WriteLine($"{GetType().Name} {nameof(Part1)}: {r}.");
 		}
 
 		public override void Part2()
@@ -136,7 +136,7 @@ namespace AdventOfCode2025.DaySpecific
             
             r += res;
 			
-			Console.WriteLine($"Day6 Part2: {r}.");
+			Console.WriteLine($"{GetType().Name} {nameof(Part2)}: {r}.");
 		}
 
         private List<List<string>> TransposeMap(List<List<string>> source)
@@ -154,7 +154,7 @@ namespace AdventOfCode2025.DaySpecific
             for (int r = 0; r < rows; r++)
             {
                 var row = source[r];
-                int rowLen = row?.Count ?? 0;
+                int rowLen = row.Count;
                 for (int c = 0; c < cols; c++)
                 {
                     if (c < rowLen)

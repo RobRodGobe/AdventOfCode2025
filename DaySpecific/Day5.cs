@@ -44,7 +44,7 @@ namespace AdventOfCode2025.DaySpecific
                 }
             }
 
-			Console.WriteLine($"Day5 Part1: {fresh}.");
+			Console.WriteLine($"{GetType().Name} {nameof(Part1)}: {fresh}.");
 		}
 
 		public override void Part2()
@@ -74,7 +74,7 @@ namespace AdventOfCode2025.DaySpecific
 				fresh += r.Item2 - r.Item1 + 1;
 			}
 
-			Console.WriteLine($"Day5 Part2: {fresh}.");
+			Console.WriteLine($"{GetType().Name} {nameof(Part2)}: {fresh}.");
 		}
 		
 		private static List<(long, long)> ConsolidateRanges(IEnumerable<(long, long)> ranges)

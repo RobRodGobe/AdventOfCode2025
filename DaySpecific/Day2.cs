@@ -65,7 +65,7 @@ namespace AdventOfCode2025.DaySpecific
                 }
             }
 
-            Console.WriteLine($"Day2 Part1: {res}.");
+            Console.WriteLine($"{GetType().Name} {nameof(Part1)}: {res}.");
 		}
 
 		public override void Part2()
@@ -93,7 +93,7 @@ namespace AdventOfCode2025.DaySpecific
                 }
             }
 
-            Console.WriteLine($"Day2 Part2: {res}.");
+            Console.WriteLine($"{GetType().Name} {nameof(Part2)}: {res}.");
 		}
 	}
 }
