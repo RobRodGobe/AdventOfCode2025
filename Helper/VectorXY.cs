@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AocCommon
+namespace AdventOfCode2025.Helper
 {
     public readonly record struct VectorXY(int x, int y)
     {

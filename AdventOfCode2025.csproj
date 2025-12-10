@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Microsoft.Z3">
+      <HintPath>z3bin/z3-4.12.2-x64-glibc-2.31/bin/Microsoft.Z3.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
