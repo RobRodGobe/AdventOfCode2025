@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Diagnostics;
 using AdventOfCode2025.Interfaces;
 
 namespace AdventOfCode2025.Helper
@@ -7,9 +8,9 @@ namespace AdventOfCode2025.Helper
     public abstract class DayBase : IDay
     {
         public void Run()
-        {
-            Part1();
-            Part2();
+        {   
+            RunTimed("Part1", Part1);
+            RunTimed("Part2", Part2);
         }
 
         public abstract void Part1();
@@ -27,6 +28,15 @@ namespace AdventOfCode2025.Helper
             }
 
             return File.ReadAllLines(path);
+        }
+
+        private void RunTimed(string label, Action action)
+        {
+            var typeName = GetType().Name;
+            var sw = Stopwatch.StartNew();
+            action();
+            sw.Stop();
+            Console.WriteLine($"{typeName} {label} completed in {sw.ElapsedMilliseconds} ms");
         }
     }
 }
